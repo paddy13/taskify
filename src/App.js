@@ -16,6 +16,7 @@ function App() {
       return alert('Task description required');
 
     const task = {
+      id: Date.now(),
       name: taskName,
       totalCost: totalCost,
       amountReceived: amountReceived,

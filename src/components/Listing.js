@@ -4,7 +4,8 @@ function Listing(props) {
 
   const taskList = props.tasks.map((task, i) => {
     return (
-      <tr key={i}>
+      <tr key={task.id}>
+        <td>{i + 1}</td>
         <td>{task.name}</td>
         <td>{task.totalCost}</td>
         <td>{task.amountReceived}</td>
@@ -17,6 +18,7 @@ function Listing(props) {
     <table>
       <tbody>
         <tr>
+          <th>#:</th>
           <th>Name:</th>
           <th>Total Cost:</th>
           <th>Amount Received:</th>
