@@ -24,7 +24,7 @@ function Listing(props) {
           <th>Amount Received:</th>
           <th>Pending Amount:</th>
         </tr>
-        {taskList}
+        { tasks.length > 0 ? taskList : '' }
       </tbody>
     </table>
   );
